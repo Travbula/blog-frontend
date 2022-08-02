@@ -1,14 +1,14 @@
-
 export async function GET() {
-    const query = await fetch('http://localhost:1337/api/posts?populate=*&sort=id:desc');
-    //const query = await fetch('http://localhost:1337/api/posts?populate=*');
+    const query = await fetch(
+        "https://travbula.herokuapp.com/api/posts?populate=*&sort=id:desc"
+    );
 
     const res = await query.json();
 
     return {
         body: {
             data: res.data,
-            meta: res.meta
-        }
+            meta: res.meta,
+        },
     };
 }
