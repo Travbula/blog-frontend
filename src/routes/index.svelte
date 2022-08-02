@@ -14,8 +14,8 @@
                 <div class="mr-4 col-span-1 justify-self-center self-center">
                     <img
                         class="h-24"
-                        src={`http://travbula.herokuapp.com${post.attributes.cover_image.data[0].attributes.formats.thumbnail.url}`}
-                        alt={`${post.attributes.cover_image.data[0].attributes.alternativeText}`}
+                        src={`${post.attributes.cover.data.attributes.formats.thumbnail.url}`}
+                        alt={`${post.attributes.cover.data.attributes.alternativeText}`}
                     />
                     <!--<img src={`/media${post.attributes.cover_image.data[0].attributes.formats.thumbnail.url}`} alt={`${post.attributes.cover_image.data[0].attributes.alternativeText}`}>-->
                 </div>
