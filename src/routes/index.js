@@ -1,6 +1,6 @@
 export async function GET() {
     const query = await fetch(
-        "https://travbula.herokuapp.com/api/posts?populate=*&sort=id:desc"
+        `${process.env.API_URL}/posts?populate=*&sort=id:desc`
     );
 
     const res = await query.json();
