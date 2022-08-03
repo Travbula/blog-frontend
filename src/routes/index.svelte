@@ -17,7 +17,6 @@
                         src={`${post.attributes.cover.data.attributes.formats.thumbnail.url}`}
                         alt={`${post.attributes.cover.data.attributes.alternativeText}`}
                     />
-                    <!--<img src={`/media${post.attributes.cover_image.data[0].attributes.formats.thumbnail.url}`} alt={`${post.attributes.cover_image.data[0].attributes.alternativeText}`}>-->
                 </div>
 
                 <div class="col-span-3 self-center">
@@ -33,7 +32,6 @@
                         <div>
                             {new Date(post.attributes.createdAt).toDateString()}
                         </div>
-                        <!--<div><a href={`/post/${post.id}`} class="hover:text-slate-900">Read more</a></div>-->
                     </div>
                 </div>
             </div>
