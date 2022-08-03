@@ -7,7 +7,7 @@
     {#each data as post}
         <a href={`/post/${post.id}`}>
             <div
-                class="grid grid-cols-4 container border-slate-200 px-16
+                class="grid grid-cols-4 container border-slate-200 px-4 sm:px-16
                 {post === data[0] ? '' : 'pt-8'}
                 {post === data[data.length - 1] ? '' : 'pb-8 border-b-4'}"
             >
