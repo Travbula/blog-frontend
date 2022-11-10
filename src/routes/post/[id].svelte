@@ -4,7 +4,7 @@
     export let meta;
 </script>
 
-<div class="px-4 sm:px-16">
+<div class="px-4 sm:px-16 max-w-2xl">
     <div class="text-sm text-right text-slate-500">{data.attributes.title}</div>
     <!--https://github.com/pablo-abc/svelte-markdown/issues/35-->
     <div class="markdown-content">
@@ -31,5 +31,9 @@
 
     .markdown-content :global(h2) {
         @apply text-slate-900 font-bold text-lg;
+    }
+
+    .markdown-content :global(code) {
+        @apply whitespace-pre-wrap bg-slate-200;
     }
 </style>
