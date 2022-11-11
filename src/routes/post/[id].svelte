@@ -36,4 +36,8 @@
     .markdown-content :global(code) {
         @apply whitespace-pre-wrap bg-slate-200;
     }
+
+    .markdown-content :global(a) {
+        @apply underline;
+    }
 </style>
