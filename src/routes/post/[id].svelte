@@ -4,7 +4,7 @@
     export let meta;
 </script>
 
-<div class="px-4 sm:px-16 max-w-2xl">
+<div class="px-4 sm:px-16 max-w-4xl">
     <div class="text-sm text-right text-slate-500">{data.attributes.title}</div>
     <!--https://github.com/pablo-abc/svelte-markdown/issues/35-->
     <div class="markdown-content">

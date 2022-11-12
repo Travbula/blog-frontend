@@ -1,5 +1,5 @@
 <div class="min-w-full bg-slate-700">
-    <div class="grid grid-cols-8 items-baseline mx-auto py-4 max-w-2xl px-2">
+    <div class="grid grid-cols-8 items-baseline mx-auto py-4 max-w-4xl px-2">
         <div
             class="col-span-3 justify-self-start text-2xl sm:text-4xl text-white"
         >
