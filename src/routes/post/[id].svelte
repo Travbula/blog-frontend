@@ -1,7 +1,11 @@
 <script>
     import SvelteMarkdown from "svelte-markdown";
+    import mixpanel from 'mixpanel-browser';
+
     export let data;
-    export let meta;
+
+    mixpanel.init(`${process.env.MIXPANEL_TOKEN}`);
+    mixpanel.track('Post', {'post_id': data.id});
 </script>
 
 <div class="px-4 sm:px-16 max-w-4xl">

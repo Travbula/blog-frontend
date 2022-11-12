@@ -1,6 +1,10 @@
 <script>
+    import mixpanel from 'mixpanel-browser';
+
     export let data;
-    export let meta;
+
+    mixpanel.init(`${process.env.MIXPANEL_TOKEN}`);
+    mixpanel.track('Index');
 </script>
 
 <div class="grid grid-cols-1">
