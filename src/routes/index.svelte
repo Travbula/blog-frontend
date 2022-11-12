@@ -30,7 +30,7 @@
                         class="text-sm font-medium text-slate-500 justify-between"
                     >
                         <div>
-                            {new Date(post.attributes.createdAt).toDateString()}
+                            {new Date(post.attributes.publishedAt).toDateString()}
                         </div>
                     </div>
                 </div>
