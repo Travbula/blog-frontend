@@ -1,6 +1,8 @@
+import { PUBLIC_API_URL } from '$env/static/public';
+
 export async function GET() {
     const query = await fetch(
-        `${process.env.API_URL}/posts?populate=*&sort=id:desc`
+        `${PUBLIC_API_URL}/posts?populate=*&sort=id:desc`
     );
 
     const res = await query.json();

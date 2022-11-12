@@ -1,9 +1,10 @@
 <script>
     import mixpanel from 'mixpanel-browser';
+    import { PUBLIC_MIXPANEL_TOKEN } from '$env/static/public';
 
     export let data;
 
-    mixpanel.init(`${process.env.MIXPANEL_TOKEN}`);
+    mixpanel.init(`${PUBLIC_MIXPANEL_TOKEN}`);
     mixpanel.track('Index');
 </script>
 
