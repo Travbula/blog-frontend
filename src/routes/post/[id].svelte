@@ -14,7 +14,11 @@
 
 <style lang="postcss">
     .markdown-content :global(p) {
-        @apply my-4 text-slate-700 font-medium text-base;
+        @apply my-4 text-slate-700 font-medium text-base max-w-xl;
+    }
+
+    .markdown-content :global(.sh) {
+        @apply max-w-4xl;
     }
 
     .markdown-content :global(iframe) {
@@ -22,7 +26,7 @@
     }
 
     .markdown-content :global(img) {
-        @apply mb-8 mt-8;
+        @apply mb-8 mt-8 max-w-3xl;
     }
 
     .markdown-content :global(h1) {
@@ -30,7 +34,7 @@
     }
 
     .markdown-content :global(h2) {
-        @apply text-slate-900 font-bold text-lg;
+        @apply text-slate-900 font-bold text-lg pt-4;
     }
 
     .markdown-content :global(code) {
@@ -39,5 +43,9 @@
 
     .markdown-content :global(a) {
         @apply underline;
+    }
+
+    .markdown-content :global(ul) {
+        @apply list-disc;
     }
 </style>
