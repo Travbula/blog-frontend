@@ -23,7 +23,7 @@
                     <div class="text-2xl font-bold text-slate-900">
                         {post.attributes.title}
                     </div>
-                    <div class="text-base font-medium text-slate-700">
+                    <div class="text-base font-medium text-slate-700 w-3/5">
                         {post.attributes.description}
                     </div>
                     <div
